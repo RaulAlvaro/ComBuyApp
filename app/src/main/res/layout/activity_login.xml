@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:layout_weight="5"
+    android:background="@color/Back_main"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="2"
+
+        >
+        <TextView
+
+            android:id="@+id/tv_inicio_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_inicio_sesion"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="35sp"
+
+            />
+        <EditText
+            android:id="@+id/et_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/et_username"
+            android:layout_below="@id/tv_inicio_sesion"
+            style="@style/EtTheme"
+            />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/et_password"
+            android:inputType="textPassword"
+            android:layout_below="@id/et_user_email"
+            style="@style/EtTheme"
+
+            />
+        <Button
+            android:id="@+id/btn_Ingresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            android:layout_below="@id/et_password"
+            android:layout_centerHorizontal="true"
+            style="@style/BtnTheme"
+
+
+            />
+
+
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        >
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

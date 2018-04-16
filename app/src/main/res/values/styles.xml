@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BtnTheme">
+        <item name="android:textColor">@color/Texto_btn</item>
+        <item name="android:background">@color/Back_btn</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">25dp</item>
+
+    </style>
+
+    <style name="EtTheme">
+        <item name="android:background">@color/Back_et</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:height">40dp</item>
+
+    </style>
 </resources>
