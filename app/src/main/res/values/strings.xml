@@ -6,5 +6,6 @@
     <string name="tv_inicio_sesion">Inicio de sesion</string>
     <string name="btn_buscar">Buscar</string>
     <string name="et_busqueda">Busqueda</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

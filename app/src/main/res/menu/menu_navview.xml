@@ -3,15 +3,29 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/menu_seccion_1"
-            android:icon="@drawable/ic_launcher_background"
-            android:title="seccion_1"/>
+            android:title="Cambiar datos personales"/>
         <item
             android:id="@+id/menu_seccion_2"
-            android:icon="@drawable/ic_launcher_background"
-            android:title="seccion_2"/>
+            android:title="Agregar ubicacion"/>
         <item
             android:id="@+id/menu_seccion_3"
-            android:icon="@drawable/ic_launcher_background"
-            android:title="seccion_3"/>
+            android:title="Buscar negocio"/>
+        <item
+            android:id="@+id/menu_seccion_4"
+            android:title="Buscar Producto" />
+        <item
+            android:id="@+id/menu_seccion_5"
+            android:title="Favoritos"/>
+
+        <item
+            android:id="@+id/navigation_subheader"
+            android:title="Otras opciones">
+            <item
+                android:id="@+id/menu_seccion_6"
+                android:title="Settings" />
+            <item
+                android:id="@+id/menu_seccion_7"
+                android:title="Rate us" />
+        </item>
     </group>
 </menu>
