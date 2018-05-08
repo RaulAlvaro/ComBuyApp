@@ -10,9 +10,12 @@ import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.example.raul.combuyapp.models.LocalNegocio;
+import com.example.raul.combuyapp.retrofit.LocalnegocioController;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -22,9 +25,12 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class PrincipalActivity extends AppCompatActivity implements OnMapReadyCallback{
+import java.util.List;
+
+public class PrincipalActivity extends AppCompatActivity implements OnMapReadyCallback/*, PrincipalContract*/{
 
     private GoogleMap mMap;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,11 @@ public class PrincipalActivity extends AppCompatActivity implements OnMapReadyCa
             SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                     .findFragmentById(R.id.map);
             mapFragment.getMapAsync(this);
+
+            /*LocalnegocioController localnegocioController = new LocalnegocioController();
+            localnegocioController.start();*/
+
+
         }else{
             Dialog dialog = GooglePlayServicesUtil.getErrorDialog(status, (Activity)getApplicationContext(),10);
             dialog.show();
@@ -58,6 +69,11 @@ public class PrincipalActivity extends AppCompatActivity implements OnMapReadyCa
 
         float zoomlevel = 16;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,zoomlevel));
-
+        //mMap.moveCamera(CameraUpdateFactory(sydney));
     }
+    /*
+    @Override
+    public void getList(List<LocalNegocio> list) {
+        Toast.makeText(this, list.get(0).getDescripcion(), Toast.LENGTH_SHORT).show();
+    }*/
 }
