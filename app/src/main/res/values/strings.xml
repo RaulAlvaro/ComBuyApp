@@ -6,6 +6,8 @@
     <string name="tv_inicio_sesion">Inicio de sesion</string>
     <string name="btn_buscar">Buscar</string>
     <string name="et_busqueda">Busqueda</string>
-    <string name="title_activity_maps">Map</string>
-
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="option_get_place">Get place</string>
+    <string name="pick_place">Choose a place</string>
 </resources>

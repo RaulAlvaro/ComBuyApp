@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button btnStart, btnLogin,btnRegister;
+    private TextView tvBienvenido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btn_Login);
         btnRegister = (Button) findViewById(R.id.btn_Register);
         btnStart = (Button) findViewById(R.id.btn_Start);
+        tvBienvenido = (TextView) findViewById(R.id.tv_Bienvenido);
 
         Toast toast1 = Toast.makeText(getApplicationContext(),"ENTRA", Toast.LENGTH_LONG);
         toast1.show();
